@@ -1,0 +1,61 @@
+.navbar-container {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+.navbar-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5em 1em;
+  align-items: center;
+  background-color: #fff;
+}
+
+.navbar-item {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 0.6em;
+}
+.navbar-logo-site {
+  font-size: 1.5rem;
+}
+.navbar-item.right {
+  justify-content: end;
+}
+
+.navbar-menu-btn {
+  position: relative;
+  z-index: 9999;
+}
+
+.navbar-cart-badge {
+  position: relative;
+}
+
+.navbar-cart-badge span {
+  display: block;
+  position: absolute;
+  top: -7px;
+  right: 0px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  background-color: orange;
+  width: 15px;
+  text-align: center;
+  border-radius: 90px;
+  z-index: 3;
+}
+
+@media screen and (min-width: 550px) {
+  .navbar-container {
+    width: 70%;
+    border-bottom: 1px solid rgb(192, 192, 192);
+    padding-block: 1em;
+  }
+  .navbar-menu-btn {
+    display: none;
+  }
+}

@@ -1,0 +1,31 @@
+.product-curr-img {
+  display: none;
+}
+@media screen and (min-width: 550px) {
+  .product-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    padding: 1em;
+    padding-top: 4em;
+  }
+
+  .product-img {
+    max-width: 300px;
+  }
+
+  .product-curr-img {
+    display: block;
+    margin-bottom: 1em;
+  }
+  .product-img .product-curr-img {
+    width: 100%;
+  }
+}

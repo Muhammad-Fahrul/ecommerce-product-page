@@ -1,0 +1,21 @@
+.detail-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  padding: 1.5em;
+}
+.detail-product-title {
+  color: orange;
+  font-size: 1.3rem;
+}
+
+.detail-addition-info {
+  font-size: 2rem;
+  text-transform: capitalize;
+}
+
+@media screen and (min-width: 550px) {
+  .detail-container {
+    width: 400px;
+  }
+}
